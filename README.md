@@ -39,6 +39,10 @@ Obligation d'utiliser des setter / getter pour interagir avec les données
  
 ## State
 
+État est un patron de conception comportemental qui permet de modifier le comportement d’un objet lorsque son état interne change.
+
+Le patron de conception état propose de créer de nouvelles classes pour tous les états possibles d’un objet et d’extraire les comportements liés aux états dans ces classes.
+
 Ajout d'une classe state permettant de données a une class un état pouvant changé 
 
 
