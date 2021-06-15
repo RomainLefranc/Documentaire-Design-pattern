@@ -47,6 +47,8 @@ State est un design pattern comportemental qui permet de modifier le comportemen
 
 State propose de créer de nouvelles classes pour tous les états possibles d’un objet et d’extraire les comportements liés aux états dans ces classes.
 
+Tout ces états implementeront un interface state, et en fonction du contexte de la classe, la methode utilisé sera differente.
+
 
 
 
