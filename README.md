@@ -18,6 +18,16 @@ Si votre code a accès à la classe du singleton, alors il peut appeler sa méth
 Objectifs : 
 - Assurez qu’une classe n’a qu’une seule instance et fournir un point d’accès global.
 
+### Prototype
+
+Cas : cloner un objet avec tout ses attributs privé
+
+Prototype est un design pattern qui crée de nouveaux objets à partir d’objets existants sans rendre le code dépendant de leur classe.
+
+Le patron de conception prototype délègue le processus de clonage aux objets qui vont être copiés. Il déclare une interface commune pour tous les objets qui pourront être clonés. Cette interface vous permet de cloner un objet sans coupler votre code à la classe de cet objet. En général, une telle interface ne contient qu’une seule méthode clone.
+
+Elle crée un objet de la classe actuelle et reporte les valeurs des attributs de l’objet d’origine dans le nouveau. Vous pouvez également copier des attributs privés
+
 ## Structural patterns
 
 ### Private Class Data
@@ -43,11 +53,13 @@ Objectifs :
 
 Cas : En fonction de l'etat d'une classe, les methodes n'ont pas le meme comportement.
 
-State est un design pattern comportemental qui permet de modifier le comportement d’un objet lorsque son état interne change.
+State est un design pattern qui permet de modifier le comportement d’un objet lorsque son état interne change.
 
 State propose de créer de nouvelles classes pour tous les états possibles d’un objet et d’extraire les comportements liés aux états dans ces classes.
 
 Tout ces états implementeront un interface state, et en fonction du contexte de la classe, la methode utilisé sera differente.
+
+
 
 
 
